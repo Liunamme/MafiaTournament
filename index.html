@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Мафия Турнир</title>
+  <link rel="shortcut icon" href="./img/mafioso.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="mafia">
+  <div id="globalStructure">
+    <div id="mafiaUpBlockGlobal">
+<div id="sekundomer">
+  <div class="timerMafia">
+    <span id="minute">00</span>
+    <span class="dvoetochie">:</span>
+    <span id="second">00</span>
+    <span id="ms">00</span>
+  </div>
+    <div id="secBtns">
+      <a id="vpered" class="vpered secBtns" target="_blank"><img src="./img/timerBtns/play.png" alt="Start"></a>
+      <a id="reset" class="reset secBtns" target="_blank"><img src="./img/timerBtns/reset.png" alt="Reset"></a>
+    </div>
+  </div>
+    <div id="voteResultMafia">
+      <h2>Выставлены</h2>
+      <div id="vRM">
+        <div id="mafiaVoteUp">
+          <span id="resultVoteMafia"></span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="globalStructurePanels">
+      <div id="mafiaControlPanelGlobal">
+        <div id="mafiaControlPanel" class="idMafiaControlPanel idMafiaControlPanelMore">
+          <div id="mCPBlock">
+            <div id="controlPanel">
+              <div id="btnPlayers">
+                <h2>Панель управления</h2>
+              </div>
+              <div id="btnFalls">
+              </div>
+              <div id="controlPanelResult">
+              </div>
+              <div id="globalPanelControls">
+                
+              </div>
+            </div>
+              <div id="clearBtnVote">
+              </div>
+          </div>
+          <div id="mCPButton">
+            <input type="button" value="►" id="mCPButtonHide">
+          </div>
+        </div>
+        <div id="mafiaCloseRandomGlobal" class="idMafiaCloseRandomGlobal offRoleGlobal">
+          <button id="mafiaBtnClose" class="idMafiaBtnClose">Рандомайзер</button>
+          <div id="mafiaInfo" class="idMafiaInfo">
+            <textarea id="textAriaMafia" class="idTextAriaMafia" ></textarea>
+          </div>
+          <div id="mafiaCloseRandom" class="idMafiaCloseRandom">
+            <div id="mafiaRole" class="idMafiaRole offRole">
+                <h2>Роли</h2>
+                <button id="mafiaBtn10" class="mafiaBtn">Рандом</button>
+                <br>
+                <div id="mafiaRoleResult" class="idMafiaRoleResult">
+                </div>
+          </div>
+      
+            <div id="mafiaSlots" class="offRole idMafiaSlots">
+                <h2>Слоты</h2>
+                <button id="slotBtn10" class="slotBtn">Рандом</button>
+                <br>
+                <div id="slotRoleResult" class="idSlotRoleResult">
+                </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+  </div>
+  <div id="blockRules">
+  </div>
+    <script src="app.js"></script>
+</body>
+</html>

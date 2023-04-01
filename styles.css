@@ -1,0 +1,1575 @@
+:root {
+  --green-color: #9BC53D;
+  --red-color: #EBFFFA;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, rgb(51, 51, 51) 0%, rgb(39, 39, 39) 50%, rgb(51, 51, 51) 100%);
+}
+
+#mafia {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+#globalStructure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#mafiaUpBlockGlobal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10px;
+  border: 2px solid white;
+  border-bottom: 0px;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 10px;
+  background-color: rgba(85, 85, 85, 0.5);
+  color: white;
+  box-shadow: 0px 0px 10px 0px white;
+}
+
+#sekundomer {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 50%;
+}
+
+#voteResultMafia {
+  width: 50%;
+  height: 142px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-left: 2px solid white;
+}
+
+#vRM {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#voteResultMafia h2{
+margin: 0;
+margin-top: 10px;
+font-size: 35px;
+text-shadow: 2px 2px 2px black;
+font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#mafiaVoteUp {
+  margin-top: 10px;
+  text-shadow: 2px 2px 2px black;
+}
+
+#resultVoteMafia {
+  font-size: 50px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.controlBtn {
+  width: 100px;
+  height: 25px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+}
+
+.controlBtn:hover{
+  box-shadow: 0px 0px 20px 0px white;
+  transform: scale(1.1);
+}
+
+.controlBtnClose {
+  display: none;
+}
+
+.fallBtn {
+  width: 100px;
+  height: 25px;
+  border: 1px solid black;
+  font-size: 17px;
+  border-radius: 5px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+}
+
+.fallBtn:hover{
+  box-shadow: 0px 0px 20px 0px white;
+  transform: scale(1.1);
+}
+
+#clearBtnVote {
+  margin-left: -10px;
+}
+
+#ms {
+  display: none;
+}
+
+#btnPlayers {
+  text-align: center;
+}
+
+#btnPlayers h2{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#btnFalls {
+  text-align: center;
+}
+
+
+#secBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.timerMafia {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+}
+
+#minute,
+#second,
+#ms {
+  font-size: 100px;
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.dvoetochie {
+  font-size: 90px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.secBtns {
+  width: 100%;
+  max-width: 100px;
+  min-width: 50px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.secBtns img{
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+}
+
+.secBtns img:hover{
+  box-shadow: 0px 0px 20px 0px white;
+  transform: scale(1.3);
+}
+
+#mafiaControlPanelGlobal {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  column-gap: 10px;
+}
+
+#globalStructurePanels {
+  width: 100%;
+  height: 770px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+.mafiaGreenBtn {
+  background: rgb(20,174,92);
+  color: white;
+  border: 2px solid black;
+}
+
+.mafiaGreenBtn:hover {
+  box-shadow: 0px 0px 20px 0px rgb(77, 218, 143);
+  transform: scale(1.2);
+}
+
+.mafiaRedBtn:hover {
+  box-shadow: 0px 0px 20px 0px rgb(255, 116, 85);
+  transform: scale(1.2);
+}
+
+
+.mafiaRedBtn {
+  background: rgb(242,72,34);
+  color: white;
+  border: 2px solid black;
+}
+
+.mafiaVotingBtn {
+  background-color:rgb(15, 112, 60);
+  color: white;
+}
+.mafiaVotingBtnOff {
+  background-color:rgb(161, 50, 25);
+  color: white;
+}
+
+.mafiaVotingBtn:hover{
+  box-shadow: 0px 0px 20px 0px rgb(77, 218, 143);
+  transform: scale(1.1);
+}
+.mafiaVotingBtnOff:hover {
+  box-shadow: 0px 0px 20px 0px rgb(255, 116, 85);
+  transform: scale(1.1);
+}
+
+.voteBtn,
+.voteBtn10 {
+  width: 120px;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 5px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+
+}
+
+#controlPanelResult input {
+  border: 2px solid black;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+#controlPanelResult {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.idMafiaControlPanel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 60%;
+  border: 2px solid white;
+  border-radius: 0px 0px 20px 20px;
+  background-color: rgba(85, 85, 85, 0.4);
+  box-shadow: 0px 0px 10px 0px white;
+}
+
+.idMafiaControlPanelMore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 0px 0px 20px 20px;
+  background-color: rgba(85, 85, 85, 0.4);
+}
+
+#mCPBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 99.6%;
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 0px 0px 0px 20px;
+}
+
+#mCPButton {
+  height: 100%;
+  width: 30px;
+  border-radius: 0px 0px 20px 0px;
+  border: 0px;
+}
+
+#mCPButtonHide {
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 0px 20px 0px;
+  border: 0;
+  border-left: 2px solid white;
+  font-size: 20px;
+  padding: 0;
+  background-color: rgba(138, 138, 138, 0.4);
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+#mCPButtonHide:hover {
+  box-shadow: 0px 0px 20px 0px white;
+}
+
+
+.idMafiaCloseRandomGlobal {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px 0px white;
+}
+
+.idMafiaBtnClose {
+  width: 100%;
+  height: 30px;
+  border-radius: 20px 20px 0px 0px;
+  border: 0;
+  font-size: 23px;
+  background-color: rgba(138, 138, 138, 0.4);
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Montserrat Alternates', sans-serif;
+  border-bottom: 2px solid white;
+
+}
+
+.idMafiaBtnClose:hover {
+  box-shadow: 0px 0px 20px 0px white;
+}
+
+.idMafiaCloseRandom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.idMafiaRole {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+  height: 735px;
+  max-height: 100%;
+  z-index: 2;
+  border-radius: 0px 0px 0px 20px;
+  border-right: 2px solid white;
+  text-align: center;
+  background-color: rgba(85, 85, 85, 0.4);
+}
+
+.idMafiaRole h2,
+.idMafiaSlots h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+  font-size: 25px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.idTextAriaMafia{
+  width: 93%;
+  height: 93%;
+  background-color: rgba(85, 85, 85, 0.0);
+  color: white;
+  border-radius: 0px 0px 20px 20px;
+  font-size: 22px;
+  resize: none;
+  border: 0px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-shadow: 2px 2px 2px black;
+}
+
+.idMafiaRoleResult,
+.idSlotRoleResult {
+  text-align: start;
+  font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+.offRole {
+  display: none !important;
+}
+
+.offRoleGlobal {
+  display: none !important;
+}
+
+.idMafiaSlots {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+  height: 735px;
+  max-height: 100%;
+  z-index: 2;
+  border-radius: 0px 0px 20px 0px;
+  text-align: center;
+  background-color: rgba(85, 85, 85, 0.4);
+}
+
+.idMafiaInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-radius: 0px 0px 20px 20px;
+  background-color: rgba(85, 85, 85, 0.4);
+}
+
+#mafiaInfo h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+}
+
+#gestures {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gesturesPicture {
+display: flex;
+max-width: 300px;
+}
+
+.gesturesPicture span {
+  display: flex;
+  align-items: center;
+}
+
+
+#gestures img {
+  width: 150px;
+}
+
+.blockRules {
+  background-image: url(./img/rules.jpg);
+  position: absolute;
+  height: 782px;
+  width: 1424px;
+  z-index: 1;
+  top: 166px;
+  left: 496px;
+}
+
+
+#player1Fall1,
+#player2Fall1,
+#player3Fall1,
+#player4Fall1,
+#player5Fall1,
+#player6Fall1,
+#player7Fall1,
+#player8Fall1,
+#player9Fall1,
+#player10Fall1,
+#player11Fall1,
+#player12Fall1,
+#player13Fall1,
+#player14Fall1,
+#player15Fall1,
+#player1Fall2,
+#player2Fall2,
+#player3Fall2,
+#player4Fall2,
+#player5Fall2,
+#player6Fall2,
+#player7Fall2,
+#player8Fall2,
+#player9Fall2,
+#player10Fall2,
+#player11Fall2,
+#player12Fall2,
+#player13Fall2,
+#player14Fall2,
+#player15Fall2,
+#player1Fall3,
+#player2Fall3,
+#player3Fall3,
+#player4Fall3,
+#player5Fall3,
+#player6Fall3,
+#player7Fall3,
+#player8Fall3,
+#player9Fall3,
+#player10Fall3,
+#player11Fall3,
+#player12Fall3,
+#player13Fall3,
+#player14Fall3,
+#player15Fall3,
+#player1Fall4,
+#player2Fall4,
+#player3Fall4,
+#player4Fall4,
+#player5Fall4,
+#player6Fall4,
+#player7Fall4,
+#player8Fall4,
+#player9Fall4,
+#player10Fall4,
+#player11Fall4,
+#player12Fall4,
+#player13Fall4,
+#player14Fall4,
+#player15Fall4,
+#player1Fall5,
+#player2Fall5,
+#player3Fall5,
+#player4Fall5,
+#player5Fall5,
+#player6Fall5,
+#player7Fall5,
+#player8Fall5,
+#player9Fall5,
+#player10Fall5,
+#player11Fall5,
+#player12Fall5,
+#player13Fall5,
+#player14Fall5,
+#player15Fall5{
+  width: 40px;
+  height: 35px;
+  font-size: 25px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+}
+
+#player1Plus30,
+#player2Plus30,
+#player3Plus30,
+#player4Plus30,
+#player5Plus30,
+#player6Plus30,
+#player7Plus30,
+#player8Plus30,
+#player9Plus30,
+#player10Plus30,
+#player11Plus30,
+#player12Plus30,
+#player13Plus30,
+#player14Plus30,
+#player15Plus30 {
+  width: 80px;
+  height: 35px;
+  margin-left: 5px;
+  font-size: 25px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+}
+
+#mafiaPlayer1,
+#mafiaPlayer2,
+#mafiaPlayer3,
+#mafiaPlayer4,
+#mafiaPlayer5,
+#mafiaPlayer6,
+#mafiaPlayer7,
+#mafiaPlayer8,
+#mafiaPlayer9,
+#mafiaPlayer10,
+#mafiaPlayer11,
+#mafiaPlayer12,
+#mafiaPlayer13,
+#mafiaPlayer14,
+#mafiaPlayer15 {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#mafiaPlayer1 span,
+#mafiaPlayer2 span,
+#mafiaPlayer3 span,
+#mafiaPlayer4 span,
+#mafiaPlayer5 span,
+#mafiaPlayer6 span,
+#mafiaPlayer7 span,
+#mafiaPlayer8 span,
+#mafiaPlayer9 span,
+#mafiaPlayer10 span,
+#mafiaPlayer11 span,
+#mafiaPlayer12 span,
+#mafiaPlayer13 span,
+#mafiaPlayer14 span,
+#mafiaPlayer15 span {
+  font-size: 25px;
+  width: 30px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+}
+
+
+#clearVoteMafia {
+  width: 100%;
+  height: 30px;
+  border-radius: 0px 0px 0px 20px;
+  border: 0;
+  border-top: 2px solid white;
+  background-color: rgba(138, 138, 138, 0.4);
+  color: white;
+  font-size: 15px;
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#clearVoteMafia:hover {
+  box-shadow: 0px 0px 20px 0px white;
+}
+
+.mafiaBtn,
+.slotBtn {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.mafiaBtn:hover,
+.slotBtn:hover {
+  box-shadow: 0px 0px 20px 0px white;
+}
+
+
+
+@media (max-width: 1300px) {
+
+  #player1Fall1,
+  #player2Fall1,
+  #player3Fall1,
+  #player4Fall1,
+  #player5Fall1,
+  #player6Fall1,
+  #player7Fall1,
+  #player8Fall1,
+  #player9Fall1,
+  #player10Fall1,
+  #player11Fall1,
+  #player12Fall1,
+  #player13Fall1,
+  #player14Fall1,
+  #player15Fall1,
+  #player1Fall2,
+  #player2Fall2,
+  #player3Fall2,
+  #player4Fall2,
+  #player5Fall2,
+  #player6Fall2,
+  #player7Fall2,
+  #player8Fall2,
+  #player9Fall2,
+  #player10Fall2,
+  #player11Fall2,
+  #player12Fall2,
+  #player13Fall2,
+  #player14Fall2,
+  #player15Fall2,
+  #player1Fall3,
+  #player2Fall3,
+  #player3Fall3,
+  #player4Fall3,
+  #player5Fall3,
+  #player6Fall3,
+  #player7Fall3,
+  #player8Fall3,
+  #player9Fall3,
+  #player10Fall3,
+  #player11Fall3,
+  #player12Fall3,
+  #player13Fall3,
+  #player14Fall3,
+  #player15Fall3,
+  #player1Fall4,
+  #player2Fall4,
+  #player3Fall4,
+  #player4Fall4,
+  #player5Fall4,
+  #player6Fall4,
+  #player7Fall4,
+  #player8Fall4,
+  #player9Fall4,
+  #player10Fall4,
+  #player11Fall4,
+  #player12Fall4,
+  #player13Fall4,
+  #player14Fall4,
+  #player15Fall4,
+  #player1Fall5,
+  #player2Fall5,
+  #player3Fall5,
+  #player4Fall5,
+  #player5Fall5,
+  #player6Fall5,
+  #player7Fall5,
+  #player8Fall5,
+  #player9Fall5,
+  #player10Fall5,
+  #player11Fall5,
+  #player12Fall5,
+  #player13Fall5,
+  #player14Fall5,
+  #player15Fall5{
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #player1Plus30,
+  #player2Plus30,
+  #player3Plus30,
+  #player4Plus30,
+  #player5Plus30,
+  #player6Plus30,
+  #player7Plus30,
+  #player8Plus30,
+  #player9Plus30,
+  #player10Plus30,
+  #player11Plus30,
+  #player12Plus30,
+  #player13Plus30,
+  #player14Plus30,
+  #player15Plus30 {
+    width: 80px;
+    height: 30px;
+    margin-left: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #mafiaPlayer1,
+  #mafiaPlayer2,
+  #mafiaPlayer3,
+  #mafiaPlayer4,
+  #mafiaPlayer5,
+  #mafiaPlayer6,
+  #mafiaPlayer7,
+  #mafiaPlayer8,
+  #mafiaPlayer9,
+  #mafiaPlayer10,
+  #mafiaPlayer11,
+  #mafiaPlayer12,
+  #mafiaPlayer13,
+  #mafiaPlayer14,
+  #mafiaPlayer15 {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  #mafiaPlayer1 span,
+  #mafiaPlayer2 span,
+  #mafiaPlayer3 span,
+  #mafiaPlayer4 span,
+  #mafiaPlayer5 span,
+  #mafiaPlayer6 span,
+  #mafiaPlayer7 span,
+  #mafiaPlayer8 span,
+  #mafiaPlayer9 span,
+  #mafiaPlayer10 span,
+  #mafiaPlayer11 span,
+  #mafiaPlayer12 span,
+  #mafiaPlayer13 span,
+  #mafiaPlayer14 span,
+  #mafiaPlayer15 span {
+    font-size: 25px;
+    width: 30px;
+  }
+
+  .controlBtn {
+    width: 60px;
+    height: 25px;
+    border: 1px solid black;
+    font-size: 20px;
+    overflow: hidden;
+  }
+  
+  .fallBtn {
+    width: 100px;
+    height: 25px;
+    border: 1px solid black;
+  }
+
+
+  .voteBtn,
+.voteBtn10 {
+  width: 120px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+#globalStructurePanels {
+  width: 100%;
+  height: 740px;
+}
+
+#mafiaRole {
+  height: 707px;
+}
+
+#mafiaSlots {
+  height: 707px;
+}
+
+}
+
+@media (max-width: 1200px) { 
+
+  #minute,
+  #second,
+  #ms {
+    font-size: 70px;
+  }
+  
+  .dvoetochie {
+    font-size: 60px;
+  }
+
+  #voteResultMafia h2{
+    font-size: 28px;
+    }
+  
+}
+
+
+@media (max-width: 1000px) {
+
+  #mCPButton {
+    height: 100%;
+    width: 15px;
+    border-radius: 0px 0px 20px 0px;
+    border: 0px;
+  }
+
+  #mCPButtonHide {
+    font-size: 10px;
+  }
+
+  .idTextAriaMafia{
+    width: 93%;
+    height: 93%;
+    background-color: rgba(85, 85, 85, 0.0);
+    color: white;
+    border-radius: 0px 0px 20px 20px;
+    font-size: 20px;
+    resize: none;
+    border: 0px;
+  }
+}
+
+@media (max-width: 940px) { 
+
+
+  #player1Fall1,
+  #player2Fall1,
+  #player3Fall1,
+  #player4Fall1,
+  #player5Fall1,
+  #player6Fall1,
+  #player7Fall1,
+  #player8Fall1,
+  #player9Fall1,
+  #player10Fall1,
+  #player11Fall1,
+  #player12Fall1,
+  #player13Fall1,
+  #player14Fall1,
+  #player15Fall1,
+  #player1Fall2,
+  #player2Fall2,
+  #player3Fall2,
+  #player4Fall2,
+  #player5Fall2,
+  #player6Fall2,
+  #player7Fall2,
+  #player8Fall2,
+  #player9Fall2,
+  #player10Fall2,
+  #player11Fall2,
+  #player12Fall2,
+  #player13Fall2,
+  #player14Fall2,
+  #player15Fall2,
+  #player1Fall3,
+  #player2Fall3,
+  #player3Fall3,
+  #player4Fall3,
+  #player5Fall3,
+  #player6Fall3,
+  #player7Fall3,
+  #player8Fall3,
+  #player9Fall3,
+  #player10Fall3,
+  #player11Fall3,
+  #player12Fall3,
+  #player13Fall3,
+  #player14Fall3,
+  #player15Fall3,
+  #player1Fall4,
+  #player2Fall4,
+  #player3Fall4,
+  #player4Fall4,
+  #player5Fall4,
+  #player6Fall4,
+  #player7Fall4,
+  #player8Fall4,
+  #player9Fall4,
+  #player10Fall4,
+  #player11Fall4,
+  #player12Fall4,
+  #player13Fall4,
+  #player14Fall4,
+  #player15Fall4,
+  #player1Fall5,
+  #player2Fall5,
+  #player3Fall5,
+  #player4Fall5,
+  #player5Fall5,
+  #player6Fall5,
+  #player7Fall5,
+  #player8Fall5,
+  #player9Fall5,
+  #player10Fall5,
+  #player11Fall5,
+  #player12Fall5,
+  #player13Fall5,
+  #player14Fall5,
+  #player15Fall5{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #player1Plus30,
+  #player2Plus30,
+  #player3Plus30,
+  #player4Plus30,
+  #player5Plus30,
+  #player6Plus30,
+  #player7Plus30,
+  #player8Plus30,
+  #player9Plus30,
+  #player10Plus30,
+  #player11Plus30,
+  #player12Plus30,
+  #player13Plus30,
+  #player14Plus30,
+  #player15Plus30 {
+    width: 50px;
+    height: 30px;
+    margin-left: 0px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #mafiaPlayer1,
+  #mafiaPlayer2,
+  #mafiaPlayer3,
+  #mafiaPlayer4,
+  #mafiaPlayer5,
+  #mafiaPlayer6,
+  #mafiaPlayer7,
+  #mafiaPlayer8,
+  #mafiaPlayer9,
+  #mafiaPlayer10,
+  #mafiaPlayer11,
+  #mafiaPlayer12,
+  #mafiaPlayer13,
+  #mafiaPlayer14,
+  #mafiaPlayer15 {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  #mafiaPlayer1 span,
+  #mafiaPlayer2 span,
+  #mafiaPlayer3 span,
+  #mafiaPlayer4 span,
+  #mafiaPlayer5 span,
+  #mafiaPlayer6 span,
+  #mafiaPlayer7 span,
+  #mafiaPlayer8 span,
+  #mafiaPlayer9 span,
+  #mafiaPlayer10 span,
+  #mafiaPlayer11 span,
+  #mafiaPlayer12 span,
+  #mafiaPlayer13 span,
+  #mafiaPlayer14 span,
+  #mafiaPlayer15 span {
+    font-size: 20px;
+    width: 25px;
+  }
+
+  .controlBtn {
+    width: 40px;
+    height: 25px;
+    border: 1px solid black;
+    font-size: 20px;
+    overflow: hidden;
+  }
+  
+  .fallBtn {
+    width: 80px;
+    height: 25px;
+    border: 1px solid black;
+    font-size: 15px;
+  }
+
+
+  .voteBtn,
+.voteBtn10 {
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+#globalStructurePanels {
+  width: 100%;
+  height: 740px;
+}
+
+#mafiaRole {
+  height: 710px;
+}
+
+#mafiaSlots {
+  height: 710px;
+}
+
+#minute,
+#second,
+#ms {
+  font-size: 65px;
+}
+
+.dvoetochie {
+  font-size: 55px;
+}
+
+
+#voteResultMafia h2{
+  font-size: 25px;
+  }
+
+}
+
+@media (max-width: 500px) { 
+
+
+  #player1Fall1,
+  #player2Fall1,
+  #player3Fall1,
+  #player4Fall1,
+  #player5Fall1,
+  #player6Fall1,
+  #player7Fall1,
+  #player8Fall1,
+  #player9Fall1,
+  #player10Fall1,
+  #player11Fall1,
+  #player12Fall1,
+  #player13Fall1,
+  #player14Fall1,
+  #player15Fall1,
+  #player1Fall2,
+  #player2Fall2,
+  #player3Fall2,
+  #player4Fall2,
+  #player5Fall2,
+  #player6Fall2,
+  #player7Fall2,
+  #player8Fall2,
+  #player9Fall2,
+  #player10Fall2,
+  #player11Fall2,
+  #player12Fall2,
+  #player13Fall2,
+  #player14Fall2,
+  #player15Fall2,
+  #player1Fall3,
+  #player2Fall3,
+  #player3Fall3,
+  #player4Fall3,
+  #player5Fall3,
+  #player6Fall3,
+  #player7Fall3,
+  #player8Fall3,
+  #player9Fall3,
+  #player10Fall3,
+  #player11Fall3,
+  #player12Fall3,
+  #player13Fall3,
+  #player14Fall3,
+  #player15Fall3,
+  #player1Fall4,
+  #player2Fall4,
+  #player3Fall4,
+  #player4Fall4,
+  #player5Fall4,
+  #player6Fall4,
+  #player7Fall4,
+  #player8Fall4,
+  #player9Fall4,
+  #player10Fall4,
+  #player11Fall4,
+  #player12Fall4,
+  #player13Fall4,
+  #player14Fall4,
+  #player15Fall4,
+  #player1Fall5,
+  #player2Fall5,
+  #player3Fall5,
+  #player4Fall5,
+  #player5Fall5,
+  #player6Fall5,
+  #player7Fall5,
+  #player8Fall5,
+  #player9Fall5,
+  #player10Fall5,
+  #player11Fall5,
+  #player12Fall5,
+  #player13Fall5,
+  #player14Fall5,
+  #player15Fall5{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #player1Plus30,
+  #player2Plus30,
+  #player3Plus30,
+  #player4Plus30,
+  #player5Plus30,
+  #player6Plus30,
+  #player7Plus30,
+  #player8Plus30,
+  #player9Plus30,
+  #player10Plus30,
+  #player11Plus30,
+  #player12Plus30,
+  #player13Plus30,
+  #player14Plus30,
+  #player15Plus30 {
+    width: 50px;
+    height: 30px;
+    margin-left: 0px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #mafiaPlayer1,
+  #mafiaPlayer2,
+  #mafiaPlayer3,
+  #mafiaPlayer4,
+  #mafiaPlayer5,
+  #mafiaPlayer6,
+  #mafiaPlayer7,
+  #mafiaPlayer8,
+  #mafiaPlayer9,
+  #mafiaPlayer10,
+  #mafiaPlayer11,
+  #mafiaPlayer12,
+  #mafiaPlayer13,
+  #mafiaPlayer14,
+  #mafiaPlayer15 {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  #mafiaPlayer1 span,
+  #mafiaPlayer2 span,
+  #mafiaPlayer3 span,
+  #mafiaPlayer4 span,
+  #mafiaPlayer5 span,
+  #mafiaPlayer6 span,
+  #mafiaPlayer7 span,
+  #mafiaPlayer8 span,
+  #mafiaPlayer9 span,
+  #mafiaPlayer10 span,
+  #mafiaPlayer11 span,
+  #mafiaPlayer12 span,
+  #mafiaPlayer13 span,
+  #mafiaPlayer14 span,
+  #mafiaPlayer15 span {
+    font-size: 20px;
+    width: 25px;
+  }
+
+  .controlBtn {
+    width: 40px;
+    height: 25px;
+    border: 1px solid black;
+    font-size: 20px;
+    overflow: hidden;
+  }
+  
+  .fallBtn {
+    width: 80px;
+    height: 25px;
+    border: 1px solid black;
+  }
+
+
+  .voteBtn,
+.voteBtn10 {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#globalStructurePanels {
+  width: 100%;
+  height: 700px;
+}
+
+#minute,
+#second,
+#ms {
+  font-size: 55px;
+}
+
+.dvoetochie {
+  font-size: 45px;
+}
+
+
+#voteResultMafia h2{
+  font-size: 30px;
+  }
+
+#mafiaUpBlockGlobal {
+  margin: 0;
+}
+
+#mafiaControlPanelGlobal{
+  margin: 0;
+}
+
+#mCPButton {
+  display: none;
+}
+
+#resultVoteMafia {
+  font-size: 30px;
+}
+
+.controlBtnClose {
+  display: inline;
+  width: 40px;
+  height: 25px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.cBCS {
+  display: none;
+}
+
+.cBC {
+  display: inline;
+  width: 200px;
+  height: 30px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+#globalStructurePanels {
+  width: 100%;
+  height: 670px;
+}
+
+#voteResultMafia {
+  height: 168px;
+}
+
+}
+
+@media (max-width: 400px) { 
+
+
+  #player1Fall1,
+  #player2Fall1,
+  #player3Fall1,
+  #player4Fall1,
+  #player5Fall1,
+  #player6Fall1,
+  #player7Fall1,
+  #player8Fall1,
+  #player9Fall1,
+  #player10Fall1,
+  #player11Fall1,
+  #player12Fall1,
+  #player13Fall1,
+  #player14Fall1,
+  #player15Fall1,
+  #player1Fall2,
+  #player2Fall2,
+  #player3Fall2,
+  #player4Fall2,
+  #player5Fall2,
+  #player6Fall2,
+  #player7Fall2,
+  #player8Fall2,
+  #player9Fall2,
+  #player10Fall2,
+  #player11Fall2,
+  #player12Fall2,
+  #player13Fall2,
+  #player14Fall2,
+  #player15Fall2,
+  #player1Fall3,
+  #player2Fall3,
+  #player3Fall3,
+  #player4Fall3,
+  #player5Fall3,
+  #player6Fall3,
+  #player7Fall3,
+  #player8Fall3,
+  #player9Fall3,
+  #player10Fall3,
+  #player11Fall3,
+  #player12Fall3,
+  #player13Fall3,
+  #player14Fall3,
+  #player15Fall3,
+  #player1Fall4,
+  #player2Fall4,
+  #player3Fall4,
+  #player4Fall4,
+  #player5Fall4,
+  #player6Fall4,
+  #player7Fall4,
+  #player8Fall4,
+  #player9Fall4,
+  #player10Fall4,
+  #player11Fall4,
+  #player12Fall4,
+  #player13Fall4,
+  #player14Fall4,
+  #player15Fall4,
+  #player1Fall5,
+  #player2Fall5,
+  #player3Fall5,
+  #player4Fall5,
+  #player5Fall5,
+  #player6Fall5,
+  #player7Fall5,
+  #player8Fall5,
+  #player9Fall5,
+  #player10Fall5,
+  #player11Fall5,
+  #player12Fall5,
+  #player13Fall5,
+  #player14Fall5,
+  #player15Fall5{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #player1Plus30,
+  #player2Plus30,
+  #player3Plus30,
+  #player4Plus30,
+  #player5Plus30,
+  #player6Plus30,
+  #player7Plus30,
+  #player8Plus30,
+  #player9Plus30,
+  #player10Plus30,
+  #player11Plus30,
+  #player12Plus30,
+  #player13Plus30,
+  #player14Plus30,
+  #player15Plus30 {
+    width: 50px;
+    height: 30px;
+    margin-left: 0px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #mafiaPlayer1,
+  #mafiaPlayer2,
+  #mafiaPlayer3,
+  #mafiaPlayer4,
+  #mafiaPlayer5,
+  #mafiaPlayer6,
+  #mafiaPlayer7,
+  #mafiaPlayer8,
+  #mafiaPlayer9,
+  #mafiaPlayer10,
+  #mafiaPlayer11,
+  #mafiaPlayer12,
+  #mafiaPlayer13,
+  #mafiaPlayer14,
+  #mafiaPlayer15 {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  #mafiaPlayer1 span,
+  #mafiaPlayer2 span,
+  #mafiaPlayer3 span,
+  #mafiaPlayer4 span,
+  #mafiaPlayer5 span,
+  #mafiaPlayer6 span,
+  #mafiaPlayer7 span,
+  #mafiaPlayer8 span,
+  #mafiaPlayer9 span,
+  #mafiaPlayer10 span,
+  #mafiaPlayer11 span,
+  #mafiaPlayer12 span,
+  #mafiaPlayer13 span,
+  #mafiaPlayer14 span,
+  #mafiaPlayer15 span {
+    font-size: 20px;
+    width: 25px;
+  }
+
+  .controlBtn {
+    width: 40px;
+    height: 25px;
+    border: 1px solid black;
+    font-size: 20px;
+    overflow: hidden;
+  }
+  
+  .fallBtn {
+    width: 80px;
+    height: 25px;
+    border: 1px solid black;
+  }
+
+
+  .voteBtn,
+.voteBtn10 {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#globalStructurePanels {
+  width: 100%;
+  height: 700px;
+}
+
+#minute,
+#second,
+#ms {
+  font-size: 55px;
+}
+
+.dvoetochie {
+  font-size: 45px;
+}
+
+
+#voteResultMafia h2{
+  font-size: 30px;
+  }
+
+#mafiaUpBlockGlobal {
+  margin: 0;
+}
+
+#mafiaControlPanelGlobal{
+  margin: 0;
+}
+
+#mCPButton {
+  display: none;
+}
+
+#resultVoteMafia {
+  font-size: 30px;
+}
+
+.controlBtnClose {
+  display: inline;
+  width: 40px;
+  height: 25px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.cBCS {
+  display: none;
+}
+
+.cBC {
+  display: inline;
+  width: 200px;
+  height: 30px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+#globalStructurePanels {
+  width: 100%;
+  height: 670px;
+}
+
+#voteResultMafia {
+  height: 168px;
+}
+
+}
